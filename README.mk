@@ -1,6 +1,12 @@
-# SISTEMA DE CADASTRO DE CLIENTES #
-Feito com python e flask
+# 📋 Sistema de Cadastro de Clientes  
 
-Com o objetivo de aprofundar conhecimentos e obter experiencia com as ferramentas e libs
+Projeto desenvolvido em **Python** com o microframework **Flask**.  
 
-Material de estudo: playlist "Desenvolvimento Web com Flask e Python" do Programador Python no Youtube
+## 🎯 Objetivo  
+Este sistema foi criado com a finalidade de:  
+- Aprofundar conhecimentos em **desenvolvimento web**.  
+- Obter experiência prática com **ferramentas** e **bibliotecas** do ecossistema Python.  
+
+## 📚 Material de Estudo  
+Baseado na playlist:  
+👉 [Desenvolvimento Web com Flask e Python - Programador Python (YouTube)  
