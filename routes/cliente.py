@@ -45,5 +45,9 @@ def atualizar_cliente(cliente_id):
 
 @cliente_route.route('/<int:cliente_id>/delete', methods=['DELETE'])
 def deletar_cliente(cliente_id):
-    """ deletar cliente """
-    pass
+    global CLIENTES
+    # o primeiro 'c' é o que vamos colocar na nova lista
+    # ou seja, para cada C em CLIENTES, vai colocar na nova lista apenas o C que tiver ID diferente do ID do Cliente
+    # cria uma nova lista sem o cliente que desejamos remover
+    CLIENTES = [ c for c in CLIENTES if c['id'] != cliente_id]
+    return {'deleted': 'ok'}
