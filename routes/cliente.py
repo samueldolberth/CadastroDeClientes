@@ -38,7 +38,11 @@ def form_cliente():
 @cliente_route.route('/<int:cliente_id>')
 def detalhe_cliente(cliente_id):
     """ formulario para cadastrar um cliente"""
-    return render_template('detalhe.html')
+
+    # Filter com lambda, retorna o cliente que possui o mesmo id do DB CLIENTES,
+    # usando Lambda para não precisar usar o "for" como nas outras rotas
+    cliente = list(filter(lambda c: c['id'] == cliente_id, CLIENTES))[0] # refaz uma lista com 1 item (que seria o usuario com o ID)
+    return render_template('detalhe_cliente.html', cliente=cliente)
 
 
 
